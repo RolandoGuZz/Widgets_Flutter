@@ -6,7 +6,7 @@ class ListViewUno extends StatelessWidget{
  @override
   Widget build(BuildContext context){
    return Scaffold(
-     appBar: AppBar(title: Text("Home scrren"),),
+     appBar: AppBar(title: Text("View uno scrren"),),
      body: Center(
        child: Text('ListViewUno'),
      ),

@@ -8,12 +8,6 @@ class MyRoutes {
 
   static final List<MenuOptions> menuOptions = [
     MenuOptions(
-      icon: Icons.home,
-      menu: 'Home',
-      ruta: 'home',
-      screen: MyHomePage(),
-    ),
-    MenuOptions(
       icon: Icons.list_alt,
       menu: 'List View Uno',
       ruta: 'listviewuno',
@@ -39,11 +33,20 @@ class MyRoutes {
     ),
   ];
 
-  static Map<String, Widget Function(BuildContext)> routes = {
-    'home': (context) => MyHomePage(),
-    'listviewuno': (context) => ListViewUno(),
-    'listviewdos': (context) => ListViewDos(),
-    'card': (context) => CardScreen(),
-    'alert': (context) => AlertScreen(),
-  };
+  // static Map<String, Widget Function(BuildContext)> routes = {
+  //   'home': (context) => MyHomePage(),
+  //   'listviewuno': (context) => ListViewUno(),
+  //   'listviewdos': (context) => ListViewDos(),
+  //   'card': (context) => CardScreen(),
+  //   'alert': (context) => AlertScreen(),
+  // };
+
+  static Map<String, Widget Function(BuildContext)> routes(){
+    Map<String, Widget Function(BuildContext)> t = {};
+    t.addAll({'home': (BuildContext c) => MyHomePage()});
+    for (var element in menuOptions) {
+      t.addAll({element.ruta: (BuildContext c) => element.screen});
+    }
+    return t;
+  }
 }

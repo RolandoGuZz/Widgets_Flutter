@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       //home: ListViewDos(),
       initialRoute: MyRoutes.initialRoute,
       theme: ThemeApp.primaryTheme(),
-      routes: MyRoutes.routes,
+      routes: MyRoutes.routes(),
     );
   }
 }
