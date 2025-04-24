@@ -25,7 +25,6 @@ class CardScreen extends StatelessWidget {
 
 class _CustomCard extends StatelessWidget {
   const _CustomCard({
-    super.key,
     required TextStyle colorText,
   }) : _colorText = colorText;
 
