@@ -31,6 +31,18 @@ class MyRoutes {
       ruta: 'alert',
       screen: AlertScreen(),
     ),
+    MenuOptions(
+      icon: Icons.quick_contacts_dialer_outlined,
+      menu: 'Card image',
+      ruta: 'cardImage',
+      screen: CardImage(),
+    ),
+    MenuOptions(
+      icon: Icons.view_carousel_outlined,
+      menu: 'Go Carousel View',
+      ruta: 'carouselview',
+      screen: CarouselViewX(),
+    ),
   ];
 
   // static Map<String, Widget Function(BuildContext)> routes = {
