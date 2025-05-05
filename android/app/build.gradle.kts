@@ -7,8 +7,8 @@ plugins {
 
 android {
     namespace = "com.example.witgets_pruebas"
-    compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "27.0.12077973"
+    compileSdk = 34
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
