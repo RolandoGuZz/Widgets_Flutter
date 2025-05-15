@@ -4,8 +4,10 @@ import 'package:witgets_pruebas/widgets/widgets.dart';
 class InputFieldScreen extends StatelessWidget {
   const InputFieldScreen({super.key});
 
+
   @override
   Widget build(BuildContext context) {
+  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
     final Map<String, dynamic> myForm = {
       'nombre': 'Aloha',
       'apellidos': '',
@@ -20,7 +22,7 @@ class InputFieldScreen extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Form(
-            key: key,
+            key: formKey,
             child: Column(
               children: [
                 SizedBox(height: 10),
@@ -59,7 +61,8 @@ class InputFieldScreen extends StatelessWidget {
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () {
-                      print(myForm);
+                      FocusScope.of(context).requestFocus(FocusNode());
+                      if (!formKey.currentState!.validate()) return;
                     },
                     child: Text('Enviar'),
                   ),

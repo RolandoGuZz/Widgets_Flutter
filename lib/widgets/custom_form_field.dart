@@ -32,9 +32,7 @@ class CurstomFormField extends StatelessWidget {
       textCapitalization: TextCapitalization.words,
       keyboardType: keyboardType,
       obscureText: obscureText,
-      onChanged: (c) {
-        myForm[keyForm] = c;
-      },
+      onChanged: (c) => myForm[keyForm] = c,
       validator: (value) {
         if (value == null) return 'Campo requerido';
         //if(value.length < 4) return 'Tamaño minimo de 4';
