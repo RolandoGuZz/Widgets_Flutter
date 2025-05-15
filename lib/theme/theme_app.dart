@@ -14,6 +14,9 @@ class ThemeApp {
         foregroundColor: Colors.white,
       ),
       iconTheme: IconThemeData(color: primary),
+      // elevatedButtonTheme: ElevatedButtonThemeData(
+      //   style: ButtonStyle(backgroundColor: ),
+      // )
     );
   }
 

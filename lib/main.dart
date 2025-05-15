@@ -21,3 +21,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+//Investigar Avatar
+//Agregar otra pantalla  que se llame input field

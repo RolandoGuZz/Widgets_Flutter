@@ -43,6 +43,12 @@ class MyRoutes {
       ruta: 'carouselview',
       screen: CarouselViewX(),
     ),
+    MenuOptions(
+      icon: Icons.input_sharp,
+      menu: 'Input Fields',
+      ruta: 'inputfield',
+      screen: InputFieldScreen(),
+    ),
   ];
 
   // static Map<String, Widget Function(BuildContext)> routes = {
